@@ -19,6 +19,7 @@ namespace ProgramacaoWeb_CSharp_Fatec.Classes
             DataVenda = dataVenda;
             ListaProdutos = listaProdutos;
         }
+        
 
         public void getDadosVenda()
         {
