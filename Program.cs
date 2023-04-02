@@ -238,7 +238,18 @@ namespace ProgramacaoPw_CSharp_Fatec
             foreach (var item in listaVeiculos)
             {
                 Console.WriteLine(item.ExibirDados());
-           
+                
+            // Crie uma classe vendas com uma lista de produtos comprada por um cliente
+            // Imprima na tela a lista de produtos , o Id da venda e a Data da venda.
+            Console.WriteLine("\n\nCriando uma classe Venda que terá uma lista de Produtos comprados por um cliente");        
+
+            List<Produto> listaProdutosCliente = new List<Produto>();
+            listaProdutosCliente.Add(p1);
+            listaProdutosCliente.Add(p2);
+
+            Venda v = new Venda(1, DateTime.Now, listaProdutosCliente);
+            v.getDadosVenda();
         }
     }
-} 
+}
+           
